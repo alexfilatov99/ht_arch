@@ -8,7 +8,7 @@ def solve(a, b, c):
     discriminant = b**2 - 4*a*c
     if discriminant < 0:
         return []
-    elif discriminant == 0:
+    elif discriminant < 1e-10:
         x = -b / (2 * a)
         return [x, x]
     else:
